@@ -14,7 +14,7 @@ declare module 'knex/types/tables' {
       id: string
       name: string
       sessionId: string
-      createdAt: string
+      created_at: string
     }
   }
 }
