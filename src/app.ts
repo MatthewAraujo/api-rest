@@ -3,6 +3,7 @@ import cookie from '@fastify/cookie'
 import { ZodError } from 'zod'
 
 import { transactionsRoutes } from './routes/transactions'
+import { categoriesRoutes } from './routes/categories'
 
 export const app = fastify()
 
@@ -22,4 +23,8 @@ app.setErrorHandler((error, request, reply) => {
 
 app.register(transactionsRoutes, {
   prefix: 'transactions',
+})
+
+app.register(categoriesRoutes, {
+  prefix: 'categories',
 })

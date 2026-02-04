@@ -7,7 +7,7 @@
     "node": ">=18"
   },	
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --run --no-threads",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src db --ext .ts --fix",
     "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
